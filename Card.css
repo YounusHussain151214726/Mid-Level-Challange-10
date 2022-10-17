@@ -1,0 +1,145 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  /* ### Neutral */
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.3rem;
+}
+
+.Container {
+  max-width: 1110px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Wraper {
+  padding: 2rem 2rem;
+  margin: 5rem 2rem;
+}
+
+.box1 {
+  padding: 2rem 2rem;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  background-color: whitesmoke;
+}
+.box1 h4 {
+  font-size: 3.5rem;
+}
+
+.box1 span {
+  margin-top: 4rem;
+  font-size: 1.6rem;
+  color: var(--Bright-Yellow);
+}
+.box1 p {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  width: 80%;
+  color: var(--Grayish-Blue);
+}
+.boxs {
+  display: flex;
+}
+
+.box2 {
+  width: 50%;
+  padding: 3rem 4rem;
+  background-color: var(--Grayish-Blue);
+  border-bottom-left-radius: 0.8rem;
+}
+
+.box3 {
+  width: 50%;
+  padding: 2rem 2rem;
+  background-color: var(--Cyan);
+  border-bottom-right-radius: 0.8rem;
+}
+
+.box2 h4 {
+  font-size: 2.5rem;
+  color: aqua;
+}
+
+.b2sub h2 {
+  font-size: 3.5rem;
+  color: aqua;
+  margin-top: 2rem;
+}
+.b2sub span {
+  position: relative;
+  top: -3rem;
+  left: 6.5rem;
+  color: gainsboro;
+}
+
+.b2sub p {
+  font-size: 1.5rem;
+  color: white;
+}
+.btn {
+  margin-top: 2rem;
+}
+
+.btn button {
+  width: 14rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  color: white;
+  background-color: var(--Bright-Yellow);
+  border: 0;
+  border-radius: 1rem;
+}
+
+.box3 h4 {
+  font-size: 2.5rem;
+  color: aqua;
+  margin-left: 2rem;
+}
+
+.box3 ul {
+  list-style: none;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.box3 ul li {
+  font-size: 1.6rem;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 900px) {
+  .boxs {
+    flex-direction: column;
+  }
+  .box2,
+  .box3 {
+    width: 100%;
+  }
+  .box2 {
+    border-radius: 0;
+  }
+  .box3 {
+    border-bottom-left-radius: 0.8rem;
+  }
+}
